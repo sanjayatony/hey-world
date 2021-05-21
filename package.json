@@ -17,36 +17,20 @@
     "url": "https://github.com/sanjayatony/hey-world/issues"
   },
   "devDependencies": {
-    "@wordpress/scripts": "^12.1.0",
+    "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.2.5",
-    "dir-archiver": "^1.1.1",
-    "node-sass": "^4.14.1",
-    "postcss": "^8.2.15",
+    "cssnano": "^5.0.3",
+    "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
-    "rtlcss": "^2.5.0",
+    "postcss-nested": "^5.0.5",
     "tailwindcss": "^2.1.2"
   },
-  "rtlcssConfig": {
-    "options": {
-      "autoRename": false,
-      "autoRenameStrict": false,
-      "blacklist": {},
-      "clean": true,
-      "greedy": false,
-      "processUrls": false,
-      "stringMap": []
-    },
-    "plugins": [],
-    "map": false
-  },
   "scripts": {
-    "dev": "postcss css/tailwind.css -o app.css -w",
-    "watch": "node-sass sass/ -o ./ --source-map true --output-style expanded --indent-type tab --indent-width 1 -w",
-    "compile:css": "node-sass sass/ -o ./ && stylelint '*.css' --fix || true && stylelint '*.css' --fix",
-    "compile:rtl": "rtlcss style.css style-rtl.css",
-    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
-    "lint:js": "wp-scripts lint-js 'js/*.js'",
-    "bundle": "dir-archiver --src . --dest ../_s.zip --exclude .DS_Store .stylelintrc.json .eslintrc .git .gitattributes .github .gitignore README.md composer.json composer.lock node_modules vendor package-lock.json package.json .travis.yml phpcs.xml.dist sass style.css.map"
+    "dev": "postcss css/tailwind.css -o app.css --watch",
+    "prod": "postcss css/tailwind.css -o app.css --env=production && postcss --use cssnano -r app.css --no-map"
   },
-  "main": "index.php"
+  "main": "index.php",
+  "dependencies": {
+    "@tailwindcss/typography": "^0.4.0"
+  }
 }
