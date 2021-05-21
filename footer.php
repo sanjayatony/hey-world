@@ -11,20 +11,10 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hey-world' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'hey-world' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'hey-world' ), 'hey-world', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
+	<footer id="colophon" class="site-footer mt-10">
+		<!-- <div class="site-info text-xs text-gray-900 text-center uppercaser">
+			<span class="bg-yellow-200 p-1">Currently I am not available for new project.</span>
+		</div>.site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
