@@ -19,7 +19,38 @@
   .site-branding h1 a {
     @apply mb-4 text-sm text-center uppercase tracking-wider text-gray-500;
   }
-  .site-branding h1 p {
-    @apply mb-4 text-sm text-center uppercase tracking-wider text-gray-500;
+  .site-branding p a {
+    @apply mb-4 text-sm text-center uppercase tracking-wider text-gray-400;
+  }
+  .prose {
+    @apply max-w-full;
+  }
+  .prose .entry-meta a {
+    @apply text-gray-500 mb-2 text-sm no-underline;
+  }
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4,
+  .prose h5 {
+    @apply text-gray-700;
+  }
+  .prose h2 {
+    @apply mb-4 mt-0;
+  }
+  .prose h2 a {
+    @apply font-bold text-2xl text-center no-underline text-gray-700;
+  }
+  .prose .more-link a {
+    @apply px-5 py-2 border border-gray-300 rounded-full text-gray-500 no-underline text-sm;
+  }
+  .nav-next {
+    @apply hidden;
+  }
+  .nav-previous {
+    @apply text-center mt-16;
+  }
+  .nav-previous a {
+    @apply px-5 py-2 border border-gray-700 rounded-full text-gray-700 font-medium;
   }
 }

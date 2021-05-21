@@ -392,6 +392,7 @@ textarea {
 .post-navigation .nav-next {
   text-align: end;
   flex: 1 0 50%;
+  display: none;
 }
 
 /* Posts and pages
