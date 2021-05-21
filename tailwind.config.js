@@ -1,7 +1,7 @@
 module.exports = {
   mode: "jit",
   purge: {
-    content: ["./src/**/*.php", "./template-parts/**/*.php", "./*.php", "./inc/**/*.php", "./inc/*.php", "./src/**/*.js"],
+    content: ["./template-parts/**/*.php", "./*.php", "./inc/**/*.php", "./inc/*.php", "./safe-jit/*.php"],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -10,5 +10,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
