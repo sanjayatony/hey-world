@@ -557,6 +557,13 @@ video {
 	--tw-ring-offset-shadow: 0 0 #0000;
 	--tw-ring-shadow: 0 0 #0000;
 }
+  body {
+	--tw-text-opacity: 1;
+	color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+  p {
+	margin-bottom: 1rem;
+}
 .container {
 	width: 100%;
 }
@@ -590,6 +597,50 @@ video {
 		max-width: 1536px;
 	}
 }
+img.custom-logo {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0.25rem;
+	width: 4rem;
+	border-radius: 9999px;
+}
+.site-branding h1 a {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	--tw-text-opacity: 1;
+	color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+.site-branding h1 p {
+	margin-bottom: 1rem;
+	text-align: center;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	--tw-text-opacity: 1;
+	color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
 .visible {
 	visibility: visible;
+}
+.mx-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.mb-8 {
+	margin-bottom: 2rem;
+}
+.max-w-2xl {
+	max-width: 42rem;
+}
+.py-16 {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+.text-center {
+	text-align: center;
 }
