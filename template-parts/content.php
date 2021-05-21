@@ -6,48 +6,49 @@
  *
  * @package Hey_World
  */
+if ( ! is_singular() ) {
+	$article_class = 'prose p-8 border border-gray-200 rounded-md shadow-lg mb-8';
+} else {
+	$article_class = 'prose';
+}
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( $article_class ); ?>>
 	<header class="entry-header">
 		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
 		if ( 'post' === get_post_type() ) :
 			?>
-			<div class="entry-meta">
+			<div class="entry-meta text-center text-gray-500 mb-2 text-sm">
 				<?php
 				hey_world_posted_on();
-				hey_world_posted_by();
 				?>
 			</div><!-- .entry-meta -->
-		<?php endif; ?>
+			<?php
+		endif;
+		if ( is_singular() ) :
+			the_title( '<h1 class="entry-title font-bold text-3xl text-center mb-8">', '</h1>' );
+		else :
+			the_title( '<h2 class="entry-title font-bold text-2xl text-center mb-4"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+		endif;
+		?>
 	</header><!-- .entry-header -->
-
-	<?php hey_world_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
-		the_content(
-			sprintf(
-				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'hey-world' ),
-					array(
-						'span' => array(
-							'class' => array(),
-						),
-					)
-				),
-				wp_kses_post( get_the_title() )
-			)
-		);
+		if ( is_singular() ) :
+			the_content();
+		else :
+			the_excerpt();
+			?>
+			<div class="text-center more-link">
+				<a href="<?php echo get_the_permalink(); ?>">Read more</a>
+			</div>
+			<?php
+		endif;
+		?>
 
+		<?php
 		wp_link_pages(
 			array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hey-world' ),
@@ -56,8 +57,4 @@
 		);
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php hey_world_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
