@@ -22,7 +22,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site py-16 max-w-2xl mx-auto">
+<div id="page" class="site py-16 max-w-2xl mx-auto px-4">
 	<header id="masthead" class="site-header mb-8">
 		<div class="site-branding text-center">
 			<?php
@@ -43,15 +43,15 @@
 			<?php endif; ?>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'hey-world' ); ?></button>
+		<!-- <nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php // esc_html_e( 'Primary Menu', 'hey-world' ); ?></button>
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
+			// wp_nav_menu(
+			// array(
+			// 'theme_location' => 'menu-1',
+			// 'menu_id'        => 'primary-menu',
+			// )
+			// );
 			?>
-		</nav><!-- #site-navigation -->
+		</nav>#site-navigation -->
 	</header><!-- #masthead -->
