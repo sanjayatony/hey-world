@@ -1010,6 +1010,9 @@ img.custom-logo {
 .mb-4 {
 	margin-bottom: 1rem;
 }
+.mb-10 {
+	margin-bottom: 2.5rem;
+}
 .max-w-2xl {
 	max-width: 42rem;
 }
@@ -1044,6 +1047,10 @@ img.custom-logo {
 .text-center {
 	text-align: center;
 }
+.text-2xl {
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
 .text-xs {
 	font-size: 0.75rem;
 	line-height: 1rem;
@@ -1056,12 +1063,15 @@ img.custom-logo {
 	font-size: 1.875rem;
 	line-height: 2.25rem;
 }
-.text-2xl {
-	font-size: 1.5rem;
-	line-height: 2rem;
-}
 .font-bold {
 	font-weight: 700;
+}
+.italic {
+	font-style: italic;
+}
+.text-green-500 {
+	--tw-text-opacity: 1;
+	color: rgba(16, 185, 129, var(--tw-text-opacity));
 }
 .text-gray-900 {
 	--tw-text-opacity: 1;
@@ -1070,6 +1080,14 @@ img.custom-logo {
 .text-gray-500 {
 	--tw-text-opacity: 1;
 	color: rgba(107, 114, 128, var(--tw-text-opacity));
+}
+.text-green-600 {
+	--tw-text-opacity: 1;
+	color: rgba(5, 150, 105, var(--tw-text-opacity));
+}
+.text-gray-400 {
+	--tw-text-opacity: 1;
+	color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
 .shadow-lg {
 	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
