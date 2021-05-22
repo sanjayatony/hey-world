@@ -69,7 +69,10 @@
     @apply hidden !important;
   }
   .formkit-form {
-    @apply p-2 border border-gray-200 rounded-md shadow-lg mx-auto mt-16 w-3/4 !important;
+    @apply px-4 py-2 border border-gray-200 rounded-md shadow-lg mx-auto mt-16 w-3/4 !important;
+  }
+  .formkit-form [data-style="minimal"] {
+    @apply p-0 !important;
   }
   .formkit-alert {
     @apply text-sm;
