@@ -58,7 +58,9 @@ if ( ! is_singular() ) {
 		);
 		?>
 	</div><!-- .entry-content -->
-	<footer class="mt-10">
-		<?php echo do_shortcode( '[convertkit]' ); ?>
+	<?php if ( is_singular() && get_field( 'twitter_url' ) ) : ?>
+	<footer class="mt-16">
+		<p class="text-sm italic">Want to talk about this post? <a href="<?php echo get_field( 'twitter_url' ); ?>" target="_blank" class="">Discuss this on Twitter</a></p>
 	</footer>
+	<?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

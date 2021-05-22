@@ -1064,6 +1064,9 @@ img.custom-logo {
 .mb-4 {
 	margin-bottom: 1rem;
 }
+.mt-16 {
+	margin-top: 4rem;
+}
 .inline {
 	display: inline;
 }
@@ -1122,6 +1125,9 @@ img.custom-logo {
 }
 .font-bold {
 	font-weight: 700;
+}
+.font-semibold {
+	font-weight: 600;
 }
 .italic {
 	font-style: italic;
