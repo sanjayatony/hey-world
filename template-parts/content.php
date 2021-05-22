@@ -6,6 +6,7 @@
  *
  * @package Hey_World
  */
+
 if ( ! is_singular() ) {
 	$article_class = 'prose p-8 border border-gray-200 rounded-md shadow-lg mb-8';
 } else {
