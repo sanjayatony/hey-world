@@ -53,4 +53,25 @@
   .nav-previous a {
     @apply px-5 py-2 border border-gray-700 rounded-full text-gray-700 font-medium;
   }
+  .formkit-header {
+    @apply hidden;
+  }
+  .formkit-subheader {
+    @apply text-sm font-bold font-sans !important;
+  }
+  .formkit-powered-by-convertkit-container {
+    @apply hidden !important;
+  }
+  .formkit-input {
+    @apply border border-gray-200 rounded-full text-sm px-4 !important;
+  }
+  .formkit-submit {
+    @apply hidden !important;
+  }
+  .formkit-form {
+    @apply p-2 border border-gray-200 rounded-md shadow-lg mx-auto mt-16 w-3/4 !important;
+  }
+  .formkit-alert {
+    @apply text-sm;
+  }
 }

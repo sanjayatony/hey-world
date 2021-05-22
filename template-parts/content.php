@@ -58,4 +58,7 @@ if ( ! is_singular() ) {
 		);
 		?>
 	</div><!-- .entry-content -->
+	<footer class="mt-10">
+		<?php echo do_shortcode( '[convertkit]' ); ?>
+	</footer>
 </article><!-- #post-<?php the_ID(); ?> -->
