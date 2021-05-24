@@ -28,9 +28,9 @@ if ( ! is_singular() ) {
 			<?php
 		endif;
 		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title font-bold text-3xl text-center mb-8">', '</h1>' );
+			the_title( '<h1 class="entry-title text-center mb-8">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title font-bold text-2xl text-center mb-4"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title text-center mb-2"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
 		?>
 	</header><!-- .entry-header -->

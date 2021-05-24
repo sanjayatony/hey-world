@@ -931,6 +931,12 @@ img.custom-logo {
 .prose {
 	max-width: 100%;
 }
+.prose a {
+	--tw-text-opacity: 1;
+	color: rgba(139, 92, 246, var(--tw-text-opacity));
+	text-decoration: none;
+	text-decoration: underline;
+}
 .prose .entry-meta a {
 	margin-bottom: 0.5rem;
 	font-size: 0.875rem;
@@ -949,27 +955,35 @@ img.custom-logo {
 }
 .prose h2 a {
 	text-align: center;
-	font-size: 1.5rem;
-	line-height: 2rem;
 	font-weight: 700;
 	--tw-text-opacity: 1;
 	color: rgba(55, 65, 81, var(--tw-text-opacity));
 	text-decoration: none;
 }
 .prose .more-link a {
+	margin-top: 2.5rem;
 	border-radius: 9999px;
 	border-width: 1px;
 	--tw-border-opacity: 1;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
-	padding-left: 1.25rem;
-	padding-right: 1.25rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	font-size: 0.875rem;
-	line-height: 1.25rem;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	text-transform: uppercase;
 	--tw-text-opacity: 1;
 	color: rgba(107, 114, 128, var(--tw-text-opacity));
 	text-decoration: none;
+}
+.prose .more-link a:hover {
+	--tw-border-opacity: 1;
+	border-color: rgba(139, 92, 246, var(--tw-border-opacity));
+	--tw-bg-opacity: 1;
+	background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 .nav-next {
 	display: none;
@@ -988,8 +1002,17 @@ img.custom-logo {
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 	font-weight: 500;
+	text-transform: uppercase;
 	--tw-text-opacity: 1;
 	color: rgba(55, 65, 81, var(--tw-text-opacity));
+}
+.nav-previous a:hover {
+	--tw-border-opacity: 1;
+	border-color: rgba(139, 92, 246, var(--tw-border-opacity));
+	--tw-bg-opacity: 1;
+	background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+	--tw-text-opacity: 1;
+	color: rgba(255, 255, 255, var(--tw-text-opacity));
 }
 .formkit-header {
 	display: none;
@@ -1061,9 +1084,6 @@ img.custom-logo {
 .mb-2 {
 	margin-bottom: 0.5rem;
 }
-.mb-4 {
-	margin-bottom: 1rem;
-}
 .mt-16 {
 	margin-top: 4rem;
 }
@@ -1119,15 +1139,8 @@ img.custom-logo {
 	font-size: 0.875rem;
 	line-height: 1.25rem;
 }
-.text-3xl {
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-}
 .font-bold {
 	font-weight: 700;
-}
-.font-semibold {
-	font-weight: 600;
 }
 .italic {
 	font-style: italic;

@@ -25,6 +25,9 @@
   .prose {
     @apply max-w-full;
   }
+  .prose a {
+    @apply text-purple-500 no-underline underline;
+  }
   .prose .entry-meta a {
     @apply text-gray-500 mb-2 text-sm no-underline;
   }
@@ -39,10 +42,10 @@
     @apply mb-4 mt-0;
   }
   .prose h2 a {
-    @apply font-bold text-2xl text-center no-underline text-gray-700;
+    @apply text-center font-bold no-underline text-gray-700;
   }
   .prose .more-link a {
-    @apply px-5 py-2 border border-gray-300 rounded-full text-gray-500 no-underline text-sm;
+    @apply px-3 py-2 border border-gray-300 rounded-full text-gray-500 no-underline text-xs mt-10 uppercase hover:text-white hover:bg-purple-500 hover:border-purple-500;
   }
   .nav-next {
     @apply hidden;
@@ -51,7 +54,7 @@
     @apply text-center mt-16;
   }
   .nav-previous a {
-    @apply px-5 py-2 border border-gray-700 rounded-full text-gray-700 font-medium;
+    @apply px-5 py-2 border border-gray-700 rounded-full text-gray-700 font-medium uppercase hover:text-white hover:bg-purple-500 hover:border-purple-500;
   }
   .formkit-header {
     @apply hidden;
