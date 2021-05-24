@@ -14,7 +14,7 @@ get_header();
 
 		<section class="error-404 not-found">
 			<header class="page-header text-center mb-10">
-				<h1 class="page-title text-green-600 text-2xl font-bold"><?php esc_html_e( 'Yo Marimo, are you lost?', 'hey-world' ); ?></h1>
+				<h1 class="page-title text-green-500 text-2xl font-bold"><?php esc_html_e( 'Yo Marimo, are you lost?', 'hey-world' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="page-content text-center prose">
